@@ -2,6 +2,7 @@
   "name": "@avolgha/log",
   "version": "1.0.0",
   "description": "Simple logger",
+  "packageManager": "pnpm@latest",
   "main": "dist/log.cjs.js",
   "module": "dist/log.esm.js",
   "browser": "dist/log.umd.js",
