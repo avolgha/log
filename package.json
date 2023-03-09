@@ -35,7 +35,7 @@
     "bundle": "rollup -c",
     "watch": "rollup -cw",
     "lint": "eslint src/",
-	"publish": "rollup -c && pnpm publish"
+    "dev:publish": "rollup -c && pnpm publish"
   },
   "files": [
     "dist"
