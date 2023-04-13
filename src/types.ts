@@ -1,20 +1,20 @@
 import kleur from "kleur";
 
-export type LoggerFunctionOptions = {
+export interface LoggerFunctionOptions {
 	timestamp?: Date | string;
 }
 
-export type LoggerFunction = (message: string, objects: Record<string, unknown>, options?: LoggerFunctionOptions) => void;
+export type LoggerFunction = (message: string, objects?: Record<string, unknown>, options?: LoggerFunctionOptions) => void;
 
-export type LoggerType = {
+export interface LoggerType {
 	info: LoggerFunction;
 	debug: LoggerFunction;
 	warn: LoggerFunction;
 	error: LoggerFunction;
 	fatal: LoggerFunction;
-};
+}
 
-export type LogLevel = {
+export interface LogLevel {
 	fullname: string;
 	color: kleur.Color;
 }
