@@ -1,6 +1,6 @@
 {
   "name": "@avolgha/log",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple logger",
   "packageManager": "pnpm@7.29.1",
   "main": "dist/log.cjs.js",
