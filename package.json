@@ -4,7 +4,7 @@
   "description": "Simple logger",
   "packageManager": "pnpm@7.29.1",
   "main": "dist/log.cjs.js",
-  "module": "dist/log.esm.js",
+  "module": "dist/log.esm.mjs",
   "browser": "dist/log.umd.js",
   "types": "dist/types/main.d.ts",
   "repository": {
@@ -35,7 +35,8 @@
     "bundle": "rollup -c",
     "watch": "rollup -cw",
     "lint": "eslint src/",
-    "dev:publish": "rollup -c && pnpm publish"
+    "dev:publish": "rollup -c && pnpm publish",
+    "test": "node test.mjs"
   },
   "files": [
     "dist"

@@ -23,12 +23,13 @@ $ pnpm install @avolgha/log
 ```typescript
 import logger from "@avolgha/log";
 
-logger.info("test info message.", {});
-logger.debug("test debug message.", {});
-logger.warn("test warn message.", {});
-logger.error("test error message.", {});
-logger.fatal("test fatal message.", {});
+logger.info("test info message.");
+logger.debug("test debug message.");
+logger.warn("test warn message.");
+logger.error("test error message.");
+logger.fatal("test fatal message.");
 ```
 
-> currently, you have to provide `{}` as an argument.  
-> this will be hopefully fixed with issue #1
+> If you execute this code on your computer,
+> it will result in the following:
+> ![example image](.github/example.png)

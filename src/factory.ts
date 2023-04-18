@@ -4,7 +4,7 @@ import parseTimestamp from "./parseTimestamp.js";
 import { LogLevel, LoggerFunction } from "./types.js";
 
 export function loggerFunctionFactory(level: LogLevel): LoggerFunction {
-	return (message, objects, options = {}) => {
+	return (message, objects = {}, options = {}) => {
 		const timestamp = parseTimestamp(options);
 		const prefix    = parsePrefix(level);
 		const formatted = formatObjects(objects);
