@@ -26,8 +26,10 @@ import logger from "@avolgha/log";
 logger.info("test info message.");
 logger.debug("test debug message.");
 logger.warn("test warn message.");
-logger.error("test error message.");
 logger.fatal("test fatal message.");
+
+const error = new Error("test error");
+logger.error(error);
 ```
 
 > If you execute this code on your computer,

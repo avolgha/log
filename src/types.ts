@@ -6,12 +6,15 @@ export interface LoggerFunctionOptions {
 
 export type LoggerFunction = (message: string, objects?: Record<string, unknown>, options?: LoggerFunctionOptions) => void;
 
+export type ErrorLoggerFunction = (error: Error, options?: LoggerFunctionOptions) => void;
+
 export interface LoggerType {
 	info: LoggerFunction;
 	debug: LoggerFunction;
 	warn: LoggerFunction;
-	error: LoggerFunction;
 	fatal: LoggerFunction;
+
+	error: ErrorLoggerFunction;
 }
 
 export interface LogLevel {
